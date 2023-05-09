@@ -1,0 +1,14 @@
+.btn {
+    height: 56px;
+    background: $m-background-color;
+    box-shadow: none;
+    padding: 15px 25px;
+    transition: all 0.6s;
+
+    &:hover {
+        background: $m-button-color ;
+        color: $m-h-text-color;
+        text-decoration: none;
+        box-shadow: 0 4px 4px rgba(0, 0, 0, 0.15);
+    }
+}

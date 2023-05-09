@@ -1,0 +1,60 @@
+.sidepanel {
+    position: fixed;
+    top: 165px;
+    left: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 350px;
+    z-index: 3;
+    color: $sidepanel-icon-color;
+    &_link {
+        &:hover {
+            svg path {
+                fill: $sidepanel-h-icon-color;
+            }
+        }
+    }
+    &_divider {
+        width: 2px;
+        height: 70px;
+        background-color: #000;
+    }
+    &_text {
+        height: 150px;
+        width: 25px;
+        color: #000;
+        span {
+            transform: rotate(-90deg) translate(-30%, -260%);
+            display: block;
+            width: 150px;
+        }
+    }
+}
+
+// Адаптация данного блока;
+
+@media (max-width: 1295px) {
+    .sidepanel {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .sidepanel {
+        display: none;
+    }
+}
+
+@media (max-width: 768px) {
+    .sidepanel {
+        display: none;
+    }
+}
+
+@media (max-width: 576px) {
+    .sidepanel {
+        display: none;
+    }
+}

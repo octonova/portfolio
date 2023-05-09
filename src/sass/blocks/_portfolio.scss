@@ -1,0 +1,128 @@
+.portfolio {
+    margin-top: 120px;
+    padding: 0 0 30px 0;
+
+    &__title {
+        position: relative;
+        text-align: center;
+        @include before_center_rectangle;
+
+        &:before {
+            width: 15px;
+            height: 15px;
+            top: 3px;
+            left: 50%;
+            transform: translate(-50%);
+            background: $mixin-skills-color;
+        }
+    }
+
+    &__subtitle {
+        text-align: center;
+    }
+
+    &__wrapper {
+        margin-top: 60px;
+        display: grid;
+        grid-template: repeat(2, 280px) / repeat(4, 280px);
+        grid-auto-rows: 280px;
+        gap: 5px;
+
+        .vertical {
+            grid-row: 1 / 3;
+            grid-column: 4 / 5;
+        }
+
+        .about-horizontal {
+            grid-row: 2 / 3;
+            grid-column: 1 / 2;
+        }
+
+        .about-port {
+            grid-row: 2 / 3;
+            grid-column: 3 / 4;
+            background-color: $portfolio-bg-color;
+
+            h3 {
+                margin-top: 20%;
+                text-align: center;
+                margin-bottom: 0;
+                color: $skills-h-text;
+                transform: translateY(-50%);
+                transition: all 0.6s;
+            }
+
+            p {
+                margin-top: 10px;
+                margin-bottom: 0;
+                font-size: 16px;
+                line-height: 19px;
+                text-align: center;
+                color: $skills-h-text;
+                transition: all 0.6s;
+            }
+        }
+
+    }
+
+    &__item {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+
+        &:hover {
+            transform: scale(1.05);
+            transition: all 0.6s;
+        }
+    }
+}
+
+@media (max-width: 1295px) {
+    .portfolio {
+        margin: 0 auto;
+
+        &__wrapper {
+            grid-template: none;
+            grid-template-columns: repeat(auto-fit, 280px);
+            grid-auto-rows: 280px;
+            justify-content: center;
+            row-gap: 35px;
+
+            .about-vertical {
+                grid-row: unset;
+                grid-column: unset;
+                overflow: hidden;
+            }
+
+            .about-port {
+                grid-row: unset;
+                grid-column: unset;
+                overflow: hidden;
+            }
+        }
+    }
+}
+
+@media (max-width: 992px) {}
+
+@media (max-width: 768px) {
+
+    .portfolio {
+        margin-top: 50px;
+    }
+}
+
+@media (max-width: 576px) {
+
+    .portfolio {
+        margin-top: 50px;
+
+        &__item {
+
+            &:hover {
+                transform: scale(1.0);
+                transition: all 0.6s;
+            }
+        }
+    }
+}
