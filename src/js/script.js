@@ -1,82 +1,3 @@
-// const hamburger = document.querySelector('.hamburger'),
-//     overlay = document.querySelector('.menu_overlay'),
-//     menu = document.querySelector('.menu'),
-//     closeElem = document.querySelector('.menu_close'),
-//     menuLink = document.querySelectorAll('.menu_link');
-
-// hamburger.addEventListener('click', () => {
-//     menu.classList.add('active');
-// });
-
-// closeElem.addEventListener('click', () => {
-//     menu.classList.remove('active');
-// });
-
-// overlay.addEventListener('click', () => {
-//     menu.classList.remove('active');
-// });
-
-// menuLink.forEach(element => {
-//     element.addEventListener('click', () => {
-//         menu.classList.remove('active');
-//     });
-// });
-
-// const counters = document.querySelectorAll('.skills_ratings-counter'),
-//     section = document.querySelector('.skills_ratings'),
-//     lines = document.querySelectorAll('.skills_ratings-line span');
-
-// function showCounter() {
-//     counters.forEach((element, i) => {
-//         lines[i].style.opacity = 1;
-//         lines[i].style.width = element.innerHTML;
-//     });
-// }
-
-// function hideCounter() {
-//     counters.forEach((element, i) => {
-//         lines[i].style.opacity = 0;
-//         lines[i].style.width = 0;
-//     });
-// }
-
-// window.addEventListener('scroll', () => {
-//     const screenPosition = window.pageYOffset;
-
-//     if (screenPosition >= 3510 || screenPosition <= 2760) {
-//         hideCounter();
-//     } else {
-//         showCounter();
-//     }
-
-// });
-
-// // Слайдер для изображений;
-
-// const imageUrls = [
-//     'img/jpg/main_ph_1.jpg',
-//     'img/jpg/main_ph_2.jpg',
-//     'img/jpg/main_ph_3.jpg'
-//   ];
-
-//   function startImageSlider(imageUrls) {
-//     let currentIndex = 0;
-//     const sliderImages = document.querySelectorAll('.promo_slider img');
-
-//     setInterval(() => {
-//       currentIndex = (currentIndex + 1) % imageUrls.length;
-//       sliderImages.forEach((img, index) => {
-//         if (index === currentIndex) {
-//           img.style.display = 'block';
-//         } else {
-//           img.style.display = 'none';
-//         }
-//       });
-//     }, 1000); // меняем изображение каждые 5 секунд
-//   }
-
-//   startImageSlider(imageUrls);
-
 const hamburger = document.querySelector('.hamburger');
 const overlay = document.querySelector('.menu__overlay');
 const menu = document.querySelector('.menu');
@@ -116,21 +37,6 @@ function showMenu() {
 
 showMenu();
 
-// hamburger.addEventListener('click', function () {
-//     menu.classList.add('active');
-//     hamburger.classList.add('hamburger-active')
-// })
-
-// overlay.addEventListener('click', () => {
-//     menu.classList.remove('active');
-// });
-
-// menuLinks.forEach(link => {
-//     link.addEventListener('click', () => {
-//         menu.classList.remove('active');
-//     });
-// });
-
 const counters = document.querySelectorAll('.skills__ratings-counter');
 const section = document.querySelector('.skills__ratings');
 const lines = document.querySelectorAll('.skills__ratings-line span');
@@ -153,10 +59,15 @@ function hideCounter() {
 window.addEventListener('scroll', () => {
     const screenPosition = window.pageYOffset;
 
-    if (screenPosition >= 3510 || screenPosition <= 2760) {
-        hideCounter();
-    } else {
+    if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i
+        .test(navigator.userAgent)) {
         showCounter();
+    } else {
+        if (screenPosition >= 3510 || screenPosition <= 2760) {
+            hideCounter();
+        } else {
+            showCounter();
+        }
     }
 });
 
@@ -173,9 +84,6 @@ const imageUrls = [
 const linesUrls = [
     'img/slider/lines/1.png',
     "img/slider/lines/2.png"
-    // "img/slider/lines/3.png"
-    // "img/slider/lines/4.png",
-    // "img/slider/lines/5.png"
 ];
 
 function promoSlider(imageUrls, linesUrls) {
