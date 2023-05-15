@@ -28,7 +28,10 @@
 
     &__list {
         list-style-type: none;
-        padding-left: 35px;
+        position: absolute;
+        top: 50%;
+        left: 35%;
+        transform: translate(-35%, -50%);
     }
 
     &__link {
