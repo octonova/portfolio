@@ -15,7 +15,7 @@ const form = document.getElementsByClassName('contacts__form')[0];
     };
 
     const xhr = new XMLHttpRequest();
-    xhr.open('POST', '/submit-form'); // Путь к серверному обработчику формы
+    xhr.open('POST', '/js/submit-form'); // Путь к серверному обработчику формы
     xhr.setRequestHeader('Content-Type', 'application/json');
     xhr.onload = function() {
         if (xhr.status === 200) {

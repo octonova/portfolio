@@ -14,7 +14,7 @@ const chatId = '-1972107142';
 const bot = new TelegramBot(telegramToken);
 
 // Маршрут для обработки отправки формы
-app.post('/submit-form', (req, res) => {
+app.post('/js/submit-form', (req, res) => {
     const { name, email, message } = req.body;
 
     // Выполнение проверок на сервере
