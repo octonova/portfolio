@@ -1,9 +1,12 @@
+// Серверная часть скрипта;
 const express = require('express');
 const bodyParser = require('body-parser');
 const TelegramBot = require('node-telegram-bot-api');
+const cors = require('cors');
 
 const app = express();
 app.use(bodyParser.json());
+app.use(cors()); // Добавляем поддержку CORS
 
 // Настройки для Telegram API
 const telegramToken = '6020652875:AAEGbJoOH3ZV3E1aGxnjC1PaQg2NLq3eC8w';
@@ -14,7 +17,7 @@ const bot = new TelegramBot(telegramToken);
 app.post('/submit-form', (req, res) => {
     const { name, email, message } = req.body;
 
-    // Выполнение проверок на сервере (например, наличие данных)
+    // Выполнение проверок на сервере
     if (!name || !email || !message) {
         return res.status(400).json({ error: 'Пожалуйста, заполните все поля формы.' });
     }
