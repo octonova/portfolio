@@ -38,7 +38,6 @@ function showMenu() {
 showMenu();
 
 const counters = document.querySelectorAll('.skills__ratings-counter');
-const section = document.querySelector('.skills__ratings');
 const lines = document.querySelectorAll('.skills__ratings-line span');
 
 
@@ -62,6 +61,7 @@ window.addEventListener('scroll', () => {
     if (/Android|webOS|iPhone|iPad|iPod|BlackBerry|BB|PlayBook|IEMobile|Windows Phone|Kindle|Silk|Opera Mini/i
         .test(navigator.userAgent)) {
         showCounter();
+
     } else {
         if (screenPosition >= 3510 || screenPosition <= 2760) {
             hideCounter();
@@ -119,4 +119,3 @@ function promoSlider(imageUrls, linesUrls) {
 }
 
 promoSlider(imageUrls, linesUrls);
-
