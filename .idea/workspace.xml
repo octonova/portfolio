@@ -4,11 +4,19 @@
     <list default="true" id="dcd19426-c2e2-44ee-830f-80a8a8a7056a" name="Changes" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/css/style.min.css" beforeDir="false" afterPath="$PROJECT_DIR$/dist/css/style.min.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/works/list.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/works/list.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/dist/img/works/weather.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/dist/img/works/weather.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/dist/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/dist/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/about_me/analytics.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/about_me/design.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/about_me/seo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/icons/about_me/web_development.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/works/list.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/works/list.jpg" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/img/works/weather.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/src/img/works/weather.jpg" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/src/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/server.js" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/js/telegramBot.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/blocks/_about.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/blocks/_about.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/sass/blocks/_menu.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/blocks/_menu.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sass/blocks/_portfolio.scss" beforeDir="false" afterPath="$PROJECT_DIR$/src/sass/blocks/_portfolio.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -36,16 +44,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "last_opened_file_path": "C:/Users/User/Desktop/Projects/deploy/portfolio",
-    "nodejs_package_manager_path": "npm",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/User/Desktop/Projects/deploy/portfolio&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
-}]]></component>
+}</component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
@@ -60,7 +68,8 @@
       <workItem from="1683790584166" duration="181000" />
       <workItem from="1683790817539" duration="2343000" />
       <workItem from="1683889207411" duration="251000" />
-      <workItem from="1684167816119" duration="11493000" />
+      <workItem from="1684167816119" duration="11908000" />
+      <workItem from="1684224971500" duration="5878000" />
     </task>
     <servers />
   </component>

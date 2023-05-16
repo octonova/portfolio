@@ -134,10 +134,7 @@
             top: 50%;
             left: 50%;
             transform: translate(-50%, -50%);
-        }
-
-        &__list {
-            padding-left: 30px;
+            white-space: nowrap;
         }
 
         &__link {

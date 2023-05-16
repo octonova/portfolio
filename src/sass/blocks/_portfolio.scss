@@ -31,48 +31,74 @@
         .about-vertical {
             grid-row: 1 / 3;
             grid-column: 4 / 5;
+
+            &-title {
+                position: absolute;
+                font-size: 16px;
+                line-height: 19px;
+                color: $skills-h-text;
+                text-align: center;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
         }
 
         .about-horizontal {
             grid-row: 2 / 3;
-            grid-column: 1 / 2;
+            grid-column: 1 / 3;
+
+            &-title {
+                position: absolute;
+                font-size: 16px;
+                line-height: 19px;
+                color: $skills-h-text;
+                text-align: center;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+            }
         }
 
         .about-port {
+            position: relative;
             grid-row: 2 / 3;
             grid-column: 3 / 4;
             background-color: $portfolio-bg-color;
 
-            h3 {
-                margin-top: 20%;
-                text-align: center;
-                margin-bottom: 0;
-                color: $skills-h-text;
-                transform: translateY(-50%);
-                transition: all 0.6s;
-            }
-
-            p {
-                margin-top: 10px;
-                margin-bottom: 0;
+            &-title {
+                position: absolute;
                 font-size: 16px;
                 line-height: 19px;
-                text-align: center;
                 color: $skills-h-text;
-                transition: all 0.6s;
+                text-align: center;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
             }
         }
-
     }
 
     &__item {
+        position: relative;
         width: 100%;
         height: 100%;
         object-fit: cover;
 
         &:hover {
-            transform: scale(1.05);
+            transform: scale(1.01);
             transition: all 0.6s;
+        }
+
+        &-title {
+            position: absolute;
+            font-size: 16px;
+            line-height: 19px;
+            color: $skills-h-text;
+            text-align: center;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
         }
     }
 }
@@ -86,7 +112,7 @@
             grid-template-columns: repeat(auto-fit, 280px);
             grid-auto-rows: 280px;
             justify-content: center;
-            row-gap: 35px;
+            row-gap: 20px;
 
             .about-vertical {
                 grid-row: unset;
